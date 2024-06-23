@@ -1,0 +1,37 @@
+.promocard {
+  &__image {
+    width: 100%;
+
+    & img {
+      width: 400px;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h1 {
+      font-size: 27px;
+      font-weight: 500;
+    }
+
+    & p {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.2em;
+    }
+  }
+}
+
+.promocards {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #3f3f3f;
+
+  &__row {
+    justify-content: space-around;
+  }
+}
