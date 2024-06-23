@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>DQ Store</title>
+	<title>Development</title>
 	<link rel="stylesheet" href="./css/main.css" />
 
 	<link rel="icon" type="image/x-icon" href="../img/favicons/logo.svg">
@@ -19,6 +19,9 @@
 	@@include('blocks/your_home.html')
 	@@include('blocks/promo_cards.html')
 	@@include('blocks/about_us.html')
+	@@include('blocks/questions.html')
+
+
 
 	@@include('blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
@@ -27,6 +30,23 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init();
+	</script>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
 	</script>
 </body>
 

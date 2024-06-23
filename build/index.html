@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DQ&#160;Store</title>
+    <title>Development</title>
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicons/logo.svg">
@@ -107,6 +107,30 @@
 
     </div>
 </section>
+    <section class="questions">
+    <div class="container questions__container">
+        <h1 class="questions__title">Часто задаваемые вопросы</h1>
+
+        <button class="collapsible">Какие услуги вы&#160;предлагаете?</button>
+        <div class="content">
+            <p>Мы&#160;предлагаем строительные услуги для жилых и&#160;коммерческих проектов, включая планирование, строительство
+                и&#160;реконструкцию.</p>
+        </div>
+
+        <button class="collapsible">Могу&#160;ли я&#160;получить ценовое предложение проекта?</button>
+        <div class="content">
+            <p>Да, мы&#160;предоставляем подробные расценки на&#160;основе спецификаций и&#160;требований проекта.</p>
+        </div>
+
+        <button class="collapsible">Сколько времени занимает проект?</button>
+        <div class="content">
+            <p>Сроки реализации проекта варьируются в&#160;зависимости от&#160;масштаба и&#160;размера, но&#160;мы&#160;стремимся выполнить их
+                эффективно.</p>
+        </div>
+
+    </div>
+
+</section>
 
     <script src="./js/index.bundle.js"></script>
     <!-- <script src="./js/burgermenu.js"></script> -->
@@ -114,6 +138,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 		AOS.init();
+	</script>
+
+    <script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
 	</script>
 </body>
 
