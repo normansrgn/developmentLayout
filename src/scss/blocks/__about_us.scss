@@ -1,0 +1,32 @@
+.about {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #3f3f3f;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__text_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  &__dics {
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  &__sec_disc {
+    font-size: 23px;
+    font-weight: 300;
+  }
+}
