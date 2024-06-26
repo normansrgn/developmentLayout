@@ -3,7 +3,7 @@
         <a href="./index.html" class="url">
             <div class="header__logo">DEVELOPMENT</div>
         </a>
-        <div class="header__contact"> <a href="./../log.html" class="url"> Связь с нами</a>
+        <div class="header__contact"> <a href="./../log_in.html" class="url"> Связь с нами</a>
             <div class="user_states">
                 <div class="user_name"></div>
                 <div class="user_surname"></div>
@@ -15,16 +15,13 @@
 </header>
 
 <script>
-    // Получить username и surname из localStorage
     const username = localStorage.getItem('username');
     const surname = localStorage.getItem('surname');
 
-    // Если username существует, отобразить его
     if (username) {
         document.querySelector('.user_name').textContent = username;
     }
 
-    // Если surname существует, отобразить его
     if (surname) {
         document.querySelector('.user_surname').textContent = surname;
     }

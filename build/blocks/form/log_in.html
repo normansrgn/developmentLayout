@@ -1,0 +1,31 @@
+<section class="reg">
+    <div class="container reg__container">
+        <div class="reg__card_form">
+            <h1 class="reg__title">Войти</h1>
+            <form class="reg__form">
+                <div class="reg__formItem">
+                    <label for="phone">Телефон</label>
+                    <input type="number" id="phone" class="reg__input" placeholder="Введите номер телефона">
+                </div>
+                <div class="reg__formItem">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" class="reg__input" placeholder="Введите пароль">
+                    <button type="button" class="reg_btn" id="logBtn">Войти</button>
+                    <span>
+                        <a href="./log.html">Нет аккаунта? Зарегистрироваться</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('logBtn').addEventListener('click', function () {
+        const phone = document.getElementById('phone');
+        const password = document.getElementById('password');
+
+        phone.classList.add('error');
+        password.classList.add('error');
+    });
+</script>

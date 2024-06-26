@@ -51,7 +51,7 @@
                     <input type="email" id="email" class="reg__input" placeholder="Введите вашу почту">
                     <button type="button" class="reg_btn" id="regBtn">Зарегистрироваться</button>
                     <span>
-                        <a href="./../../log_in.html">Есть аккаунт? Войти</a>
+                        <a href="./log.html">Есть аккаунт? Войти</a>
                     </span>
                 </div>
             </form>
@@ -61,20 +61,24 @@
 
 <script>
     document.getElementById('regBtn').addEventListener('click', function () {
+        // Получить поля ввода
         const username = document.getElementById('username');
         const surname = document.getElementById('surname');
         const phone = document.getElementById('phone');
         const password = document.getElementById('password');
         const email = document.getElementById('email');
 
+        // Сбросить предыдущие ошибки
         username.classList.remove('error');
         surname.classList.remove('error');
         phone.classList.remove('error');
         password.classList.remove('error');
         email.classList.remove('error');
 
+        // Флаг для проверки, все ли поля заполнены
         let allFieldsFilled = true;
 
+        // Проверка каждого поля на пустоту и добавление класса error, если поле пустое
         if (username.value.trim() === '') {
             username.classList.add('error');
             allFieldsFilled = false;
@@ -100,6 +104,7 @@
             allFieldsFilled = false;
         }
 
+        // Если все поля заполнены, показать сообщение об успешной регистрации и сохранить данные в localStorage
         if (allFieldsFilled) {
             alert('Успешно зарегистрировались');
             localStorage.setItem('username', username.value.trim());
