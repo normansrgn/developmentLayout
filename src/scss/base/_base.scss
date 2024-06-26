@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  animation: fade 0.1s;
+  animation: fade 0.9s;
   font-family: "Inter", sans-serif;
   /* font-family: Arial, Helvetica, sans-serif; */
   color: white;
@@ -30,6 +30,16 @@ body {
 
 main {
   flex-grow: 1;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0.2;
+  }
+
+  to {
+      opacity: 1;
+  }
 }
 
 a {
