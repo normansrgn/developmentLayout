@@ -1,20 +1,26 @@
 .header {
+  padding: 20px;
+  border-bottom: 1px solid #3f3f3f;
 
-    padding: 20px;
-    border-bottom: 1px solid #3F3F3F;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  &__logo {
+    font-size: 36px;
+    font-weight: 500;
+  }
 
-    &__logo {
-        font-size: 36px;
-        font-weight: 500;
-    }
+  &__contact {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
-    &__contact {
-        font-size: 20px;
-    }
+.log_header {
+  justify-content: center !important;
 }
