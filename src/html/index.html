@@ -22,10 +22,11 @@
 	@@include('blocks/questions.html')
 	@@include('blocks/footer_promo.html')
 
-	
+
 
 
 	@@include('blocks/footer.html')
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 	<script src="./js/index.bundle.js"></script>
 	<!-- <script src="./../js/burgermenu.js"></script> -->
 
@@ -49,6 +50,18 @@
 				}
 			});
 		}
+	</script>
+
+	<script>
+		let typed = new Typed('#typed', { 
+			stringsElement: '#typed-strings', 
+			typeSpeed: 120, 
+			startDelay: 500, 
+			backSpeed: 50, 
+			showCursor: true,
+			loop: true, 
+			stringsElement: '#typed-strings',
+		});
 	</script>
 </body>
 

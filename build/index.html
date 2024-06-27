@@ -43,10 +43,15 @@
 
     <section class="promo" data-aos="fade-up" data-aos-duration="1000">
     <div class="container promo__container">
-        <div class="promo__text">
-            <h1>Build with Confidence</h1>
+        <div class="promo__text text-typing">
+            <h1 id="typed"></h1>
 
             <p>Наши специалисты обеспечат качественное строительство под любые ваши нужды в&#160;Краснодаре.</p>
+
+        </div>
+
+        <div id="typed-strings">
+            <span>Build with Confidence</span>
 
         </div>
 
@@ -57,20 +62,18 @@
 
     </div>
 </section>
+
     <section class="home" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container home__container">
-        <div class="home__text">
-            <h1>Постройте дом своей мечты с&#160;DEVELOPMENT
-                в&#160;Краснодаре</h1>
+    <!-- <div class="container home__container"> -->
+    <div class="home__text">
+        <h1>Постройте дом своей мечты с&#160;DEVELOPMENT
+            в&#160;Краснодаре</h1>
 
-            <p>Наша команда поможет вам создать идеальный&#160;дом. От&#160;планирования до&#160;завершения мы&#160;гарантируем качество и
-                удовлетворение.</p>
-
-        </div>
+        <p>Наша команда поможет вам создать идеальный&#160;дом. От&#160;планирования до&#160;завершения мы&#160;гарантируем качество и
+            удовлетворение.</p>
 
     </div>
 </section>
-
     <div class="promocards">
 
     <div class="container promocards__container">
@@ -166,6 +169,7 @@
     </div>
 </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="./js/index.bundle.js"></script>
     <!-- <script src="./js/burgermenu.js"></script> -->
 
@@ -189,6 +193,18 @@
 				}
 			});
 		}
+	</script>
+
+    <script>
+		let typed = new Typed('#typed', { 
+			stringsElement: '#typed-strings', 
+			typeSpeed: 120, 
+			startDelay: 500, 
+			backSpeed: 50, 
+			showCursor: true,
+			loop: true, 
+			stringsElement: '#typed-strings',
+		});
 	</script>
 </body>
 
