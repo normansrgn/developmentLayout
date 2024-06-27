@@ -24,8 +24,15 @@
   }
 }
 
+.typed-cursor {
+  height: 10px;
+}
 
-@media (max-width:989px) {
+.typed-fade-out {
+  height: 10px;
+}
+
+@media (max-width: 989px) {
   .home__text h1 {
     width: auto;
     font-size: 52px;
