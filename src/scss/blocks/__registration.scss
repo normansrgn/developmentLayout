@@ -93,3 +93,18 @@
   color: red !important;
 
 }
+
+@media (max-width: 560px) {
+  .reg__card_form {
+    max-width: 100%;
+    width: 380px;
+  }
+}
+
+@media (max-width: 498px) {
+  .reg__card_form {
+    max-width: 100%;
+    width: 340px;
+  }
+}
+

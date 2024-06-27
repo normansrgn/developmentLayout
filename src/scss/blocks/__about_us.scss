@@ -30,3 +30,21 @@
     font-weight: 300;
   }
 }
+
+@media (max-width: 1254px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 747px) {
+  .about__dics,
+  .about__sec_disc {
+    font-size: 17px;
+  }
+}

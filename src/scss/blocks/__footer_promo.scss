@@ -59,3 +59,13 @@
     }
   }
 }
+
+@media (max-width: 773px) {
+  .footer_promo__textblock h1 {
+    font-size: 26px;
+  }
+
+  .footer_promo__textblock p {
+    font-size: 15px;
+  }
+}

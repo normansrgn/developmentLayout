@@ -1,7 +1,17 @@
 .promo {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #3F3F3F;
+  border-bottom: 1px solid #3f3f3f;
+
+  &__container {
+    padding: 60px 0px;
+  }
+
+  &__image {
+    & img {
+      max-width: 100%;
+    }
+  }
 
   &__text {
     margin-left: 45px;
@@ -18,3 +28,27 @@
     }
   }
 }
+
+@media (max-width: 1165px) {
+  .promo__image img {
+    display: none;
+  }
+
+  .promo__text h1,
+  .promo__text p {
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .promo__text h1 {
+    font-size: 41px ;
+  }
+
+  .promo__text p {
+    font-size: 14px;
+  }
+
+}
+
